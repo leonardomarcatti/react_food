@@ -67,111 +67,47 @@ food-delivery-app</br>
 └── README.md</br>
 
 
+<h2>🚀 Como executar o projeto</h2>
+<ul>
+   <li>Clonar o repositório => https://github.com/leonardomarcatti/react_food.git</li>
+   <li>Dentro da pasta rais => docker compose up --build</li>
+</ul>
 
-🚀 Como executar o projeto
-1️⃣ Clonar o repositório
-git clone https://github.com/seu-usuario/food-delivery-app.git
+<h2>🌐 Acessando a aplicação</h2>
+<p>Frontend: http://ip:3000</p>
+<p>Backend API: http://meals:3001</p>
 
-Entre na pasta do projeto:
+<h2>🍕 Funcionalidades</h2>
+<p>📋 Listagem de comidas</p>
+<p>🛒 Carrinho de compras</p>
+<p>📦 Envio de pedidos</p>
+<p>🔄 Comunicação com API</p>
+<p>⚡ Proxy automático via Vite</p>
 
-cd food-delivery-app
-🐳 Executando com Docker
+<h2>📦 Gerenciamento de pacotes</h2>
+<p>Este projeto utiliza pnpm.</p>
+<p>Caso queira rodar localmente sem Docker:</p>
 
-Na raiz do projeto, execute:
 
-docker compose up --build
+<h2>📚 Tecnologias utilizadas</h2>
+<ol>
+   <ul>
+      <li><b>Frontend</b></li>
+      <li>React</li>
+      <li>Vite</li>
+      <li>JavaScript</li>
+      <li>pnpm</li>
+   <ul>
+   <ul>
+      <li><b>Backend</b></li>
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>pnpm</li>
+      <li>DevOps</li>
+      <li>🐳Docker</li>
+      <li>Docker Compose</li>
+   </ul>
+</ol>
 
-Docker irá:
-
-construir os containers
-
-instalar dependências com pnpm
-
-iniciar frontend e backend
-
-🌐 Acessando a aplicação
-
-Frontend:
-
-http://localhost:3000
-
-Backend API:
-
-http://localhost:3001
-🍕 Funcionalidades
-
-📋 Listagem de comidas
-
-🛒 Carrinho de compras
-
-📦 Envio de pedidos
-
-🔄 Comunicação com API
-
-⚡ Proxy automático via Vite
-
-📦 Gerenciamento de pacotes
-
-Este projeto utiliza pnpm.
-
-Caso queira rodar localmente sem Docker:
-
-Instalar pnpm:
-
-npm install -g pnpm
-🛠 Rodando sem Docker
-Frontend
-
-Entre na pasta:
-
-cd frontend
-
-Instale dependências:
-
-pnpm install
-
-Execute:
-
-pnpm dev
-Backend
-
-Entre na pasta:
-
-cd backend
-
-Instale dependências:
-
-pnpm install
-
-Execute:
-
-pnpm start
-📚 Tecnologias utilizadas
-
-Frontend
-
-React
-
-Vite
-
-JavaScript
-
-pnpm
-
-Backend
-
-Node.js
-
-Express
-
-pnpm
-
-DevOps
-
-Docker
-
-Docker Compose
-
-📄 Licença
-
-Este projeto está licenciado sob a licença MIT.
+<h2>📄 Licença</h2>
+<p>Este projeto está licenciado sob a licença MIT.</p>
