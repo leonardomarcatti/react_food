@@ -97,7 +97,7 @@ food-delivery-app</br>
       <li>Vite</li>
       <li>JavaScript</li>
       <li>pnpm</li>
-   <ul>
+   </ul>
    <ul>
       <li><b>Backend</b></li>
       <li>Node.js</li>
