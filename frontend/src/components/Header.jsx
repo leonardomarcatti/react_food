@@ -1,9 +1,9 @@
-import logoImg from '../assets/logo.jpg'
+import styles from './Header.module.css'
 
 const Header = () => {
-   return <header id="main-header">
-      <div id="title">
-         <img src={logoImg} alt="" />
+   return <header id={styles.main_header}>
+      <div id={styles.title}>
+         <img src='logo.jpg' alt="" />
          <h1>react Food</h1>
       </div>
       <button type="button">Cart (0)</button>

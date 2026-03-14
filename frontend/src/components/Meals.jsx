@@ -1,22 +1,12 @@
-import { useState, useEffect } from "react"
+import useFetchMeals from "../hooks/useFetchmeals"
+import MealItem from "./MealItem"
 
 const Meals = () => {
-   const [meals, setMeals] = useState([])
-   
-   const fetchMeals = async () => {
-      const response = await fetch('/meals')
-      const json = await response.json()
-      setMeals(json)
-      console.log(json);      
-   }
-
-   useEffect(() => {
-      fetchMeals()
-   }, [])
+   const {meals} = useFetchMeals()
    
    return <ul id="meals">
       {
-         meals.map(meal => <li key={meal.id}>{meal.name}</li>)
+         meals.map(meal => <MealItem key={meal.id} meal={meal}/>)
       }
    </ul>
 }
