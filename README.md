@@ -66,25 +66,7 @@ food-delivery-app</br>
 │</br>
 └── README.md</br>
 
-<h2>⚙️ Configuração do Proxy no Vite</h2>
-<p>O Vite redireciona requisições para o backend.</p>
-<p>Exemplo de configuração:</p>
-<p>export default defineConfig({</br>
-  server: {</br>
-    proxy: {</br>
-      "/api": {</br>
-        target: "http://backend:3001",</br>
-        changeOrigin: true</br>
-      }</br>
-    }</br>
-  }</br>
-})</p>
 
-Assim o frontend pode fazer chamadas como:
-
-fetch("/api/meals")
-
-Sem precisar usar a URL completa da API.
 
 🚀 Como executar o projeto
 1️⃣ Clonar o repositório
