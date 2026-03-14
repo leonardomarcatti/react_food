@@ -40,46 +40,45 @@
                      │      Port 3001     │</br>
                      └────────────────────┘</br>
 </p>
-🐳 Containers
+<h2>🐳 Containers</h2>
+<p>A aplicação roda em dois containers separados:</p>
 
-A aplicação roda em dois containers separados:
 
-Container	Tecnologia	Porta
-frontend	React + Vite + pnpm	3000
-backend	Node.js + pnpm	3001
-📁 Estrutura do projeto
-food-delivery-app
-│
-├── backend
-│   ├── src
-│   ├── package.json
-│   └── Dockerfile
-│
-├── frontend
-│   ├── src
-│   ├── vite.config.js
-│   ├── package.json
-│   └── Dockerfile
-│
-├── docker-compose.yml
-│
-└── README.md
-⚙️ Configuração do Proxy no Vite
+<p><b>Container	Tecnologia	Porta</b></p>
+<p>frontend	React + Vite + pnpm	3000</p>
+<p>backend	Node.js + pnpm	3001</p>
+<h2>📁 Estrutura do projeto</h2>
 
-O Vite redireciona requisições para o backend.
+food-delivery-app</br>
+│</br>
+├── backend</br>
+│   ├── src</br>
+│   ├── package.json</br>
+│   └── Dockerfile</br>
+│</br>
+├── frontend</br>
+│   ├── src</br>
+│   ├── vite.config.js</br>
+│   ├── package.json</br>
+│   └── Dockerfile</br>
+│</br>
+├── docker-compose.yml</br>
+│</br>
+└── README.md</br>
 
-Exemplo de configuração:
-
-export default defineConfig({
-  server: {
-    proxy: {
-      "/api": {
-        target: "http://backend:3001",
-        changeOrigin: true
-      }
-    }
-  }
-})
+<h2>⚙️ Configuração do Proxy no Vite</h2>
+<p>O Vite redireciona requisições para o backend.</p>
+<p>Exemplo de configuração:</p>
+<p>export default defineConfig({</br>
+  server: {</br>
+    proxy: {</br>
+      "/api": {</br>
+        target: "http://backend:3001",</br>
+        changeOrigin: true</br>
+      }</br>
+    }</br>
+  }</br>
+})</p>
 
 Assim o frontend pode fazer chamadas como:
 
