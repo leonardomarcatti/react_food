@@ -91,23 +91,28 @@ food-delivery-app</br>
 
 <h2>📚 Tecnologias utilizadas</h2>
 <ol>
-   <ul>
-      <li><b>Frontend</b></li>
-      <li>React</li>
-      <li>Vite</li>
-      <li>JavaScript</li>
-      <li>pnpm</li>
-   </ul>
-   <ul>
-      <li><b>Backend</b></li>
-      <li>Node.js</li>
-      <li>Express</li>
-      <li>pnpm</li>
-      <li>DevOps</li>
-      <li>🐳Docker</li>
-      <li>Docker Compose</li>
-   </ul>
-</ol>
+   <li>
+      <b>Frontend</b>
+      <ul>
+         <li>React</li>
+         <li>Vite</li>
+         <li>JavaScript</li>
+         <li>pnpm</li>
+      </ul>
+   </li>
+
+   <li>
+      <b>Backend</b>
+      <ul>
+         <li>Node.js</li>
+         <li>Express</li>
+         <li>pnpm</li>
+         <li>DevOps</li>
+         <li>🐳 Docker</li>
+         <li>Docker Compose</li>
+      </ul>
+   </li>
+</ol>>
 
 <h2>📄 Licença</h2>
 <p>Este projeto está licenciado sob a licença MIT.</p>
