@@ -1,4 +1,3 @@
-<></>
 <h1>🍔 Food Delivery App</h1>
 
 <p>Uma aplicação fullstack de delivery de comida construída com React + Node.js e executada em containers Docker.</p>
@@ -94,25 +93,25 @@ food-delivery-app</br>
    <li>
       <b>Frontend</b>
       <ul>
-         <li>React</li>
-         <li>Vite</li>
-         <li>JavaScript</li>
-         <li>pnpm</li>
+         <li>⚛️ React</li>
+         <li>⚡ Vite</li>
+         <li>🟨 JavaScript</li>
+         <li>📦 pnpm</li>
       </ul>
    </li>
 
    <li>
       <b>Backend</b>
       <ul>
-         <li>Node.js</li>
-         <li>Express</li>
-         <li>pnpm</li>
-         <li>DevOps</li>
+         <li>🟢 Node.js</li>
+         <li>🚂 Express</li>
+         <li>📦 pnpm</li>
+         <li>⚙️ DevOps</li>
          <li>🐳 Docker</li>
-         <li>Docker Compose</li>
+         <li>🐙 Docker Compose</li>
       </ul>
    </li>
-</ol>>
+</ol>
 
 <h2>📄 Licença</h2>
 <p>Este projeto está licenciado sob a licença MIT.</p>
