@@ -1,61 +1,45 @@
-🍔 Food Delivery App
+<></>
+<h1>🍔 Food Delivery App</h1>
 
+<p>Uma aplicação fullstack de delivery de comida construída com React + Node.js e executada em containers Docker.</p>
+<ul>
+   <li>O projeto utiliza:</li>
+   <li>React + Vite no frontend</li>
+   <li>Node.js no backend</li>
+   <li>pnpm como gerenciador de pacotes</li>
+   <li>Docker Compose para orquestrar os serviços</li>
+   <li>O Vite atua como proxy, permitindo que o frontend acesse o backend sem problemas de CORS.</li>
+</ul>
 
+<h2>📸 Preview da aplicação</h2>
+<p align="center">
+  <img src="screenshots/img1.png" width="400">
+</p>
 
-
-
-
-
-
-
-
-
-
-Uma aplicação fullstack de delivery de comida construída com React + Node.js e executada em containers Docker.
-
-O projeto utiliza:
-
-React + Vite no frontend
-
-Node.js no backend
-
-pnpm como gerenciador de pacotes
-
-Docker Compose para orquestrar os serviços
-
-O Vite atua como proxy, permitindo que o frontend acesse o backend sem problemas de CORS.
-
-📸 Preview da aplicação
-
-(Adicione screenshots aqui quando quiser)
-
-screenshots/app.png
-
-Exemplo:
-
-![App Screenshot](screenshots/app.png)
-🧱 Arquitetura da aplicação
-                    ┌───────────────────────┐
-                    │       Browser         │
-                    │   http://localhost    │
-                    └───────────┬───────────┘
-                                │
-                                │
-                                ▼
-                     ┌────────────────────┐
-                     │  Frontend (React)  │
-                     │   Vite Dev Server  │
-                     │      Port 3000     │
-                     └─────────┬──────────┘
-                               │
-                     Vite Proxy│
-                               │
-                               ▼
-                     ┌────────────────────┐
-                     │   Backend (Node)   │
-                     │       API          │
-                     │      Port 3001     │
-                     └────────────────────┘
+<h2>🧱 Arquitetura da aplicação</h2>
+<p align="center">
+                    ┌───────────────────────┐</br>
+                    │       Browser         │</br>
+                    │   http://localhost    │</br>
+                    └───────────┬───────────┘</br>
+                                │</br>
+                                │</br>
+                                ▼</br>
+                     ┌────────────────────┐</br>
+                     │  Frontend (React)  │</br>
+                     │   Vite Dev Server  │</br>
+                     │      Port 3000     │</br>
+                     └─────────┬──────────┘</br>
+                               │</br>
+                     Vite Proxy│</br>
+                               │</br>
+                               ▼</br>
+                     ┌────────────────────┐</br>
+                     │   Backend (Node)   │</br>
+                     │       API          │</br>
+                     │      Port 3001     │</br>
+                     └────────────────────┘</br>
+</p>
 🐳 Containers
 
 A aplicação roda em dois containers separados:
