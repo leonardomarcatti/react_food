@@ -4,7 +4,7 @@ import Button from "./ui/Button"
 import useSendOrderHook from "../hooks/useSendOrderHook"
 
 const Checkout = () => {
-   const { handleCloseCheckout, handleSubmit, cartTotal, progressCTX, isLoading, responseData } = useSendOrderHook()
+   const { handleCloseCheckout, handleSubmit, cartTotal, progressCTX, isLoading, responseData, handleFinnish } = useSendOrderHook()
    
    let actions = <>
       <Button textOnly onClick={handleCloseCheckout}>Back</Button>
@@ -15,11 +15,11 @@ const Checkout = () => {
       actions = <span>Sending...</span>
    }
 
-   if (responseData) {
+   if (responseData) {      
       return <Modal open={progressCTX.progress == 'checkout'} onClose={handleCloseCheckout}>
          <h2>Success!</h2>
          <p>Your order was sent</p>
-         <Button onClick={handleCloseCheckout}>Close</Button>
+         <Button onClick={handleFinnish}>Close</Button>
       </Modal>
    }
 

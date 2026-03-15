@@ -5,13 +5,19 @@ import { UserContext } from '../store/userProgress'
 
 const useSendOrderHook = () => {
    const [isLoading, setIsLoading] = useState(false)
-   const [responseData, setResponseData] = useState()
+   const [responseData, setResponseData] = useState(null)
    const cartCTX = useContext(CartContext)
    const progressCTX = useContext(UserContext)
    const handleCloseCheckout = () => {
       progressCTX.hideCheckout()
-      cartCTX.clear()
    }
+
+   const handleFinnish = () => {
+      progressCTX.finnish()
+      cartCTX.clear()
+      setResponseData(null)
+   }
+
    const cartTotal = cartCTX.items.reduce((price, item) => {
       return price + item.quantity * item.price
    }, 0)
@@ -40,7 +46,7 @@ const useSendOrderHook = () => {
       handleOrders(userData)
    }
 
-   return { handleCloseCheckout, handleSubmit, cartTotal, progressCTX, isLoading, responseData }
+   return { handleCloseCheckout, handleSubmit, cartTotal, progressCTX, isLoading, responseData, handleFinnish }
 }
 
 export default useSendOrderHook

@@ -6,6 +6,7 @@ const UserContext = createContext({
    hideCart: () => null,
    showCheckout: () => null,
    hideCheckout: () => null,
+   finnish: () => null
 
 });
 
@@ -15,13 +16,15 @@ const UserProgressProvider = ({children}) => {
    const hideCart = () => setUserProgress('')
    const showCheckout = () => setUserProgress('checkout')
    const hideCheckout = () => setUserProgress('')
+   const finnish = () => setUserProgress('finnish')
 
    const userProgressCtx = {
       progress: userProgress,
       showCart,
       hideCart,
       showCheckout,
-      hideCheckout
+      hideCheckout,
+      finnish
    }
    return <UserContext.Provider value={userProgressCtx}>{children}</UserContext.Provider>
 }
