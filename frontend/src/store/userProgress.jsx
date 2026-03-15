@@ -13,8 +13,8 @@ const UserProgressProvider = ({children}) => {
    const [userProgress, setUserProgress] = useState('')   
    const showCart = () => setUserProgress('cart')
    const hideCart = () => setUserProgress('')
-   const showCheckout = () => setUserProgress('chekout')
-   const hideCheckout = () => setUserProgress('cart')
+   const showCheckout = () => setUserProgress('checkout')
+   const hideCheckout = () => setUserProgress('')
 
    const userProgressCtx = {
       progress: userProgress,

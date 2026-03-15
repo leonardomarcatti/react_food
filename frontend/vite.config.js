@@ -16,6 +16,11 @@ export default defineConfig({
             target: "http://backend:3001",
             changeOrigin: true,
             secure: false
+         },
+         "/orders": {
+            target: "http://backend:3001",
+            changeOrigin: true,
+            secure: false
          }
       }
    }
