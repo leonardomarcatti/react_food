@@ -27,7 +27,7 @@ const Checkout = () => {
    return <Modal open={progressCTX.progress == 'checkout'} onClose={handleCloseCheckout}>
       <form action="" method="post" onSubmit={handleSubmit}>
          <h2>Checkout</h2>
-         <p>Total: {cartTotal}</p>
+         <p>Total: ${cartTotal.toFixed(2)}</p>
          <Input label='Full name' type='text' id='name' />
          <Input label='Email Address' type='email' id='email' />
          <Input label='Street' type='text' id='street' />

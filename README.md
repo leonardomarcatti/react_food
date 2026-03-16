@@ -13,6 +13,9 @@
 <h2>📸 Preview da aplicação</h2>
 <p align="center">
   <img src="screenshots/img1.png" width="400">
+  <img src="screenshots/img2.png" width="400">
+  <img src="screenshots/img3.png" width="400">
+  <img src="screenshots/img4.png" width="400">
 </p>
 
 <h2>🧱 Arquitetura da aplicação</h2>
