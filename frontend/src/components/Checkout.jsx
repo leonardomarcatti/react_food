@@ -3,6 +3,7 @@ import Input from '../components/ui/Input'
 import Button from "./ui/Button"
 import useSendOrderHook from "../hooks/useSendOrderHook"
 
+
 const Checkout = () => {
    const { handleCloseCheckout, handleSubmit, cartTotal, progressCTX, isLoading, responseData, handleFinnish } = useSendOrderHook()
    
